@@ -12,6 +12,30 @@ function init(){
     }
   }
 
+  var navOpen = document.getElementById('open');
+  var navClose = document.getElementById('close');
+
+  /*navOpen.onclick = navToggle;
+
+  function navToggle() {
+    document.getElementById('mobile-nav').setAttribute("style", "tranform:translateY(0)")
+  }*/
+
+  $('#open').on('click', function(){
+    $('#mobile-nav').css({
+      "transition": ".5s ease",
+      "transform": "translateY(0)"
+    });
+  });
+  $('a').on('click', function(){
+    $('#mobile-nav').css({
+      "transition": ".5s ease",
+      "transform": "translateY(-100%)"
+    });
+  });
+
+
+
   //video player
   var video = document.getElementById('play-video');
   var cover = document.getElementById('video-thumb');
