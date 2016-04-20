@@ -1,0 +1,122 @@
+body
+  margin: 0
+  padding: 0 25px 25px
+  font:
+    family: 'Raleway', sans-serif
+    size: 14px
+    weight: 300
+  color: #848282
+
+  h1
+    font:
+      size: 33px
+      family: 'Dancing Script', cursive
+    margin-bottom: 0
+
+  h2
+    font:
+      size: 48px
+      family: 'Playfair Display', serif
+    margin-bottom: 0
+  h3
+    font:
+      size: 25px
+      family: 'Dancing Script', cursive
+    margin-top: 0
+  hr
+    width: 80px
+    height: 3px
+    background-color: $accent
+    border: none
+    margin: 30px auto 40px
+  a
+    color: #696969
+    text-decoration: none
+  .title
+    color: #5a5957
+    font-family: 'Playfair Display', serif
+  .btn
+    margin-top: 80px
+    padding: 10px 40px
+    background-color: $accent
+    border: 1px solid $accent
+    color: #fff
+    transition: 0.5s ease
+    cursor: pointer
+    &:hover
+      background-color: #fff
+      color: $accent
+      border-color: $accent
+  .overlay
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0, 0, 0, .5)
+    opacity: 0
+    transition: 0.5s ease
+    @media(max-width: 900px)
+      opacity: 1
+    &:hover
+      opacity: 1
+    .overlay-box
+      display: inline-block
+      width: 185px
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+
+      h4
+        margin-bottom: 0
+        color: #fff
+        font:
+          style: oblique
+          size: 18px
+          family: "Playfair Display", serif
+        &:before
+          width: 30px
+          height: 20px
+          border-left: 2px solid #fff
+          border-top: 2px solid #fff
+          position: absolute
+          left: 0
+          top: 0
+          content: ''
+        &:after
+          width: 30px
+          height: 20px
+          border-right: 2px solid #fff
+          border-top: 2px solid #fff
+          position: absolute
+          right: 0
+          top: 0
+          content: ''
+
+      p
+        color: #fff
+        margin: 0 20px 20px
+        &:before
+          width: 30px
+          height: 20px
+          border-right: 2px solid #fff
+          border-bottom: 2px solid #fff
+          position: absolute
+          right: 0
+          bottom: 0
+          content: ''
+        &:after
+          width: 30px
+          height: 20px
+          border-left: 2px solid #fff
+          border-bottom: 2px solid #fff
+          position: absolute
+          left: 0
+          bottom: 0
+          content: ''
+      hr
+        height: 1px
+        display: block
+        background-color: #fff
+        width: 140px
+        margin: 5px auto
