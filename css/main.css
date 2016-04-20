@@ -136,7 +136,8 @@ header {
   header i {
     position: absolute;
     bottom: 70px;
-    height: 15px; }
+    height: 15px;
+    color: #fff; }
 
 nav {
   height: 55px;
@@ -159,12 +160,37 @@ nav {
     nav .navlinks a:hover {
       border-bottom: 1px solid #d07c7c;
       color: #000; }
+  @media (max-width: 750px) {
+    nav .navlinks {
+      display: none; } }
+  nav #open {
+    width: 19px;
+    height: 19px;
+    position: relative;
+    margin-top: 18px;
+    cursor: pointer;
+    display: none; }
+@media(max-width: 750px) {
+  nav #open {
+    display: inline-block; } }
+    nav #open .mobile-span {
+      width: 19px;
+      height: 3px;
+      background: #696969;
+      position: absolute; }
+    nav #open .span-top {
+      top: 0; }
+    nav #open .span-center {
+      top: 8px; }
+    nav #open .span-bottom {
+      bottom: 0px; }
 
 .nav-fixed {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   background-color: #fff;
-  width: 88.86%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
   z-index: 1; }
 
@@ -174,6 +200,56 @@ nav {
   -o-animation-duration: 0.5s !important;
   -ms-animation-duration: 0.5s !important;
   animation-duration: 0.5s !important; }
+
+#mobile-nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 25px;
+  background-color: #fff;
+  transform: translateY(-100%); }
+  #mobile-nav .links {
+    max-width: 430px;
+    margin: 60px auto; }
+    #mobile-nav .links a {
+      display: block;
+      border-bottom: 2px solid #eee;
+      font-size: 50px; }
+      #mobile-nav .links a:last-of-type {
+        border-bottom: none; }
+      #mobile-nav .links a .fa {
+        width: 110px;
+        margin-right: 50px;
+        color: #d07c7c; }
+  #mobile-nav h1 {
+    margin-left: 25px; }
+  #mobile-nav #close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 18px;
+    top: 18px;
+    right: 50px;
+    display: inline;
+    cursor: pointer; }
+    #mobile-nav #close .mobile-span {
+      width: 50px;
+      height: 5px;
+      background: #696969;
+      position: absolute; }
+    #mobile-nav #close .span-top {
+      top: 0;
+      transform: rotate(45deg) translate(16px, 16px); }
+    #mobile-nav #close .span-center {
+      top: 22px;
+      opacity: 0; }
+    #mobile-nav #close .span-bottom {
+      bottom: 0px;
+      transform: rotate(-45deg) translate(16px, -16px); }
 
 #about {
   padding: 150px 0;
@@ -352,6 +428,9 @@ nav {
   #contact form {
     margin: 55px auto 35px;
     max-width: 590px; }
+@media(max-width: 690px) {
+  #contact form {
+    margin: 55px 25px 35px; } }
     #contact form input, #contact form textarea {
       display: block;
       width: 100%;
