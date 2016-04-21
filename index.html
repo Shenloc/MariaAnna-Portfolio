@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="hero-title">
         <h1>MariaAnna</h1>
         <h3>photography</h3>
@@ -26,7 +26,7 @@
     </header>
 
     <nav id="nav">
-      <a class="logo" href="">MariaAnna</a>
+      <a class="logo" href="#header">MariaAnna</a>
       <div class="navlinks">
         <a href="#about">About Me</a>
         <a href="#work">Works</a>
@@ -136,31 +136,23 @@
     </div>
 
     <div id="testimonials">
-      <ul class="slider">
-        <li id="slide1" class="active-slide slide">
-          <h3 class="title">See the world through my lens</h3>
-          <hr>
-          <p class="blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+      <h3 class="title">See the world through my lens</h3>
+      <hr>
+      <div id="test_container">
+        <div class="testimonial">
+            <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <p class="author">John Doe CEO at Unknown</p>
-        </li>
-        <li id="slide2" class="slide">
-          <h3 class="title">See the world through my lens</h3>
-          <hr>
-          <p class="blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+        </div>
+        <div class="testimonial">
+            <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <p class="author">John Doe CEO at Unknown</p>
-        </li>
-        <li id="slide3" class="slide">
-          <h3 class="title">See the world through my lens</h3>
-          <hr>
-          <p class="blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+        </div>
+        <div class="testimonial">
+            <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <p class="author">John Doe CEO at Unknown</p>
-        </li>
-      </ul>
-      <span class="indicaor">
-        <i class="fa fa-circle active-ind" aria-hidden="true"></i>
-        <i class="fa fa-circle" aria-hidden="true"></i>
-        <i class="fa fa-circle" aria-hidden="true"></i>
-      </span>
+        </div>
+      </div>
+      <div id="t_pagers"><a class="pager"></a><a class="pager"></a><a class="pager"></a></div>
     </div>
 
     <div id="video">
@@ -211,7 +203,7 @@
     </div>
 
     <footer>
-      <a href=""><img src="img/icon/arrow.png"></a>
+      <a href="#header"><img src="img/icon/arrow.png"></a>
       <h1>MariaAnna</h1>
       <h3>photography</h3>
       <p class="blurb">© Copyright 2014 MariaAnna</p>
