@@ -9,6 +9,9 @@ body {
     font-size: 33px;
     font-family: "Dancing Script", cursive;
     margin-bottom: 0; }
+@media(max-width: 450px) {
+  body h1 {
+    font-size: 36px; } }
   body h2 {
     font-size: 48px;
     font-family: "Playfair Display", serif;
@@ -55,19 +58,19 @@ body {
     opacity: 1; } }
     body .overlay:hover {
       opacity: 1; }
-    body .overlay .overlay-box {
+    body .overlay .box {
       display: inline-block;
       width: 185px;
       position: absolute;
       top: 50%;
       transform: translate(-50%, -50%); }
-      body .overlay .overlay-box h4 {
+      body .overlay .box h4 {
         margin-bottom: 0;
         color: #fff;
         font-style: oblique;
         font-size: 18px;
         font-family: "Playfair Display", serif; }
-        body .overlay .overlay-box h4:before {
+        body .overlay .box h4:before {
           width: 30px;
           height: 20px;
           border-left: 2px solid #fff;
@@ -76,7 +79,7 @@ body {
           left: 0;
           top: 0;
           content: ""; }
-        body .overlay .overlay-box h4:after {
+        body .overlay .box h4:after {
           width: 30px;
           height: 20px;
           border-right: 2px solid #fff;
@@ -85,10 +88,10 @@ body {
           right: 0;
           top: 0;
           content: ""; }
-      body .overlay .overlay-box p {
+      body .overlay .box p {
         color: #fff;
         margin: 0 20px 20px; }
-        body .overlay .overlay-box p:before {
+        body .overlay .box p:before {
           width: 30px;
           height: 20px;
           border-right: 2px solid #fff;
@@ -97,7 +100,7 @@ body {
           right: 0;
           bottom: 0;
           content: ""; }
-        body .overlay .overlay-box p:after {
+        body .overlay .box p:after {
           width: 30px;
           height: 20px;
           border-left: 2px solid #fff;
@@ -106,7 +109,7 @@ body {
           left: 0;
           bottom: 0;
           content: ""; }
-      body .overlay .overlay-box hr {
+      body .overlay .box hr {
         height: 1px;
         display: block;
         background-color: #fff;
@@ -125,6 +128,9 @@ header {
   header .hero-title {
     transform: translateY(50%);
     text-align: center; }
+@media(max-width: 450px) {
+  header .hero-title {
+    transform: translateY(25%); } }
   header p {
     font-size: 16px;
     font-weight: 400;
@@ -271,13 +277,17 @@ nav {
 @media(max-width: 900px) {
   #work .columns {
     flex-direction: column; } }
-    #work .columns .col-lg .row {
-      display: flex; }
+    #work .columns .col-lg {
+      margin-left: auto; }
+      #work .columns .col-lg .row {
+        display: flex; }
 @media(max-width: 500px) {
   #work .columns .col-lg .row {
     flex-direction: column; } }
-    #work .columns .col-sm #urban {
-      display: inline-block; }
+    #work .columns .col-sm {
+      margin-right: auto; }
+      #work .columns .col-sm #urban {
+        display: inline-block; }
 @media(max-width: 900px) {
   #work .columns .col-sm #urban {
     display: block; } }
@@ -419,6 +429,9 @@ nav {
     transform: translateX(-50%); }
 #video #video-player {
   display: none; }
+  #video #video-player #video-source {
+    width: 100%;
+    height: 500px; }
 
 #follow {
   padding: 150px 0;
@@ -474,14 +487,14 @@ nav {
     #contact form textarea {
       width: 99.7%;
       height: 140px; }
-    #contact form span {
+    #contact form div {
       display: flex;
       justify-content: space-between;
       margin-top: 40px; }
-      #contact form span p {
+      #contact form div p {
         display: inline;
         margin-left: 30px; }
-      #contact form span .btn {
+      #contact form div .btn {
         margin-top: 0; }
 
 footer {
