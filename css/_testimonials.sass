@@ -1,17 +1,58 @@
 #testimonials
+  max-width: 600px
+  margin: 0 auto 150px
   text-align: center
-  padding-bottom: 150px
+  position: relative
 
-  .active-slide
-    display: block !important
+  .testimonial
+    position: absolute
+    left: 0px
+    top: 0px
+    width: 100%
 
-  .slide
-    list-style: none
-    display: none
+  #test_container
+    position: relative
+    overflow: hidden
 
-    .author
-      margin: 30px 0 40px
-      color: #a0a0a0
+  #t_pagers
+    position: absolute
+    left: 40%
+    left: 50%
+    transform: translateX(-50%)
+
+    .pager
+      display: inline-block
+      text-decoration: none
+      width: 10px
+      min-height: 10px
+      margin-right: 5px
+      background: #ccc
+      border-radius: 50%
+      cursor: pointer
+
+    .pager.active
+      background: $accent
+
+
+
+
+
+  .author
+    margin: 30px 0 40px
+    color: #a0a0a0
+
+  .slide-wrapper
+
+    .slider
+      padding: 0
+
+      .active-slide
+        display: block !important
+
+      .slide
+        list-style: none
+        max-width: 600px
+        margin: 0 auto
 
   .fa-circle
     color: #d3d3d3

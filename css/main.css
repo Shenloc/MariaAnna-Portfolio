@@ -211,7 +211,7 @@ nav {
   z-index: 100;
   padding: 25px;
   background-color: #fff;
-  transform: translateY(-100%); }
+  transform: translateY(-200%); }
   #mobile-nav .links {
     max-width: 430px;
     margin: 60px auto; }
@@ -219,6 +219,9 @@ nav {
       display: block;
       border-bottom: 2px solid #eee;
       font-size: 50px; }
+      #mobile-nav .links a:first-of-type .fa {
+        margin-left: 7px;
+        margin-right: 43px; }
       #mobile-nav .links a:last-of-type {
         border-bottom: none; }
       #mobile-nav .links a .fa {
@@ -232,7 +235,7 @@ nav {
     height: 50px;
     position: absolute;
     margin-top: 18px;
-    top: 18px;
+    top: 24px;
     right: 50px;
     display: inline;
     cursor: pointer; }
@@ -285,16 +288,45 @@ nav {
         width: 100%; }
 
 #testimonials {
+  max-width: 600px;
+  margin: 0 auto 150px;
   text-align: center;
-  padding-bottom: 150px; }
-  #testimonials .active-slide {
-    display: block !important; }
-  #testimonials .slide {
-    list-style: none;
-    display: none; }
-    #testimonials .slide .author {
-      margin: 30px 0 40px;
-      color: #a0a0a0; }
+  position: relative; }
+  #testimonials .testimonial {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%; }
+  #testimonials #test_container {
+    position: relative;
+    overflow: hidden; }
+  #testimonials #t_pagers {
+    position: absolute;
+    left: 40%;
+    left: 50%;
+    transform: translateX(-50%); }
+    #testimonials #t_pagers .pager {
+      display: inline-block;
+      text-decoration: none;
+      width: 10px;
+      min-height: 10px;
+      margin-right: 5px;
+      background: #ccc;
+      border-radius: 50%;
+      cursor: pointer; }
+    #testimonials #t_pagers .pager.active {
+      background: #d07c7c; }
+  #testimonials .author {
+    margin: 30px 0 40px;
+    color: #a0a0a0; }
+  #testimonials .slide-wrapper .slider {
+    padding: 0; }
+    #testimonials .slide-wrapper .slider .active-slide {
+      display: block !important; }
+    #testimonials .slide-wrapper .slider .slide {
+      list-style: none;
+      max-width: 600px;
+      margin: 0 auto; }
   #testimonials .fa-circle {
     color: #d3d3d3;
     width: 15px; }
