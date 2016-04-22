@@ -16,13 +16,21 @@
 
     .col-sm
       margin-right: auto
+      @media(max-width: 900px)
+        margin-left: 12.5px
+        margin-right: inherit
       #urban
         display: inline-block
         @media(max-width: 900px)
           display: block
+          margin-bottom: 25px
+      #animal
+        margin-top: 10px
 
     .img-box
       margin: 12.5px
       position: relative
       img
+        display: block
         width: 100%
+        height: auto
